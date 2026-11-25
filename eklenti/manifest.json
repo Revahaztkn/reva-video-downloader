@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Reva Video Downloader",
+  "version": "1.0.4",
+  "description": "YouTube, X, Instagram ve TikTok videolarını 480p veya 720p olarak kaydet.",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtK4Isdw/aQ+5ueNbIKCLYDeMjA/SSCHzrZB+ySgiBcFPJsGR/XK5NxCIacWHHsvRcHdYSEyeYVWPevWdiMYjpjDrBpfrk02ncNZfQ4Ok2g/DIg1L7phmIlITPb3iZuFmJTO+ZvgslWV+TNR15C8w+plLV8O0dc9lNXjE61WwW1U7N0krr6IWIVwMyGXYVBowHqNUTGHl1nVETIgzLoavjokcCmhD8dKyQ6P/d9sX8bT4VowyjIN4yG+d1ZPn3eNAn8RasFtH9gheiOg6EbylxYJ5feby48fPcSzWJKEmXbR4UNLfGMope2tfU3ox9g/IuAo7AUmjfjh8TzDO4ABBQwIDAQAB",
+  "permissions": ["nativeMessaging"],
+  "icons": {"16":"icons/reva-16.png","32":"icons/reva-32.png","48":"icons/reva-48.png","128":"icons/reva-128.png"},
+  "action": {
+    "default_title": "Reva Video Downloader",
+    "default_icon": {"16":"icons/reva-16.png","32":"icons/reva-32.png","48":"icons/reva-48.png"},
+    "default_popup": "popup.html"
+  },
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{
+    "matches": ["https://*.youtube.com/*", "https://*.x.com/*", "https://*.twitter.com/*", "https://*.instagram.com/*", "https://*.tiktok.com/*"],
+    "js": ["links.js", "content.js"],
+    "all_frames": true
+  }]
+}
+

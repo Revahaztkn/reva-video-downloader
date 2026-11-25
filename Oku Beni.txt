@@ -1,0 +1,22 @@
+﻿REVA VIDEO DOWNLOADER
+Windows 10/11 · Brave, Chrome ve Edge · x64 veya ARM64
+
+1. ZIP dosyasını bir klasöre çıkar.
+2. Kur.cmd dosyasına çift tıkla ve “Yardımcı kuruldu” mesajını bekle.
+   Yönetici izni gerekmez. Kurulum, yt-dlp, FFmpeg ve Deno'yu GitHub'dan
+   indirip SHA-256 özetlerini doğrular. İlk kurulum birkaç dakika sürebilir.
+3. Brave'de brave://extensions, Chrome'da chrome://extensions veya Edge'de edge://extensions adresini aç.
+4. Geliştirici modu'nu aç. “Paketlenmemiş öğe yükle” ile paketin içindeki
+   eklenti klasörünü seç.
+5. Açık video sayfasını yenile. Videonun sağ üstündeki yeşil düğmeden
+   480p veya 720p'yi seç. MP4 dosyası Windows'un İndirilenler klasörüne yazılır.
+
+Akışta bir videonun bağlantısı belirlenemezse videonun kendi gönderi sayfasını
+aç. Seçenekler üst kalite sınırıdır. Kaynak daha düşük çözünürlükteyse dosya
+büyütülmez. Dikey videolarda sınır kısa kenara uygulanır.
+
+Dört platformda herkese açık ve indirme iznin olan videolar için tasarlandı.
+Giriş isteyen, korumalı veya platformun engellediği videolar indirilemeyebilir.
+Platform değişikliklerinden sonra Kur.cmd güncel indirme araçlarını kurar.
+Eklenti, tarayıcı çerezlerini yerel yardımcıya göndermez.
+

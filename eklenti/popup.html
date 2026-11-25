@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="tr">
+<meta charset="utf-8">
+<title>Reva Video Downloader</title>
+<style>
+  body { box-sizing:border-box; width:248px; margin:0; padding:14px; background:#f2faf5; color:#123b28; font:14px system-ui,sans-serif; }
+  header { display:flex; align-items:center; gap:8px; margin-bottom:12px; font-weight:700; }
+  img { width:26px; height:26px; }
+  .options { display:flex; gap:8px; }
+  button { flex:1; padding:8px 4px; border:0; border-radius:7px; background:#087b42; color:#fff; font:600 13px system-ui,sans-serif; cursor:pointer; }
+  button:hover { background:#056438; }
+  button:focus-visible { outline:2px solid #0b5130; outline-offset:2px; }
+  button:disabled { opacity:.65; cursor:wait; }
+  #status { margin:10px 0 0; overflow-wrap:anywhere; font-size:12px; }
+  #status:empty { display:none; }
+</style>
+<header><img src="icons/reva-48.png" alt="">Reva Video Downloader</header>
+<div class="options">
+  <button type="button" data-quality="480">480p indir</button>
+  <button type="button" data-quality="720">720p indir</button>
+</div>
+<p id="status" role="status"></p>
+<script src="popup.js"></script>
+</html>
